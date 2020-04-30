@@ -1,17 +1,19 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="container justify-center ">
+    <div class="columns is-centered is-vcentered">
+      <Table></Table>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import 'bulma/bulma.sass'
+import Table from './components/table';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Table
   }
 }
 </script>
